@@ -8,6 +8,18 @@
     "lint": "eslint -c .eslintrc --ext .ts ./src",
     "start": "npm run build && electron ./public/main.js"
   },
+  "main": "./public/main.js",
+  "build": {
+    "appId": "local.test.app1",
+        "files": ["public", "package.json", "package-lock.json"],
+        "win": {
+            "target": "nsis"
+        },
+        "nsis": {
+            "oneClick": false,
+            "allowToChangeInstallationDirectory": true
+        }
+  },
   "repository": "https://github.com/electron/electron-quick-start-typescript",
   "keywords": [
     "Electron",
