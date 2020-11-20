@@ -1,7 +1,7 @@
 {
-  "name": "electron-quick-start-typescript",
+  "name": "shinymas-client",
   "version": "1.0.0",
-  "description": "A minimal Electron application written with Typescript",
+  "description": "A minimal Electron browser for reading shinymas-story",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
